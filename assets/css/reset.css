@@ -1,0 +1,40 @@
+
+:root{
+    --main-bg : #fcfcf4;
+    --menu-bg : #e2e2d4;
+    --black-color : #000;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+a {text-decoration:none}
+button{
+    border: none;
+    background: none;
+    cursor: grab;
+}
+body, html{
+    min-height: 100%;
+    font-size: 14px;
+    font-family: "Supreme", sans-serif;
+}
+body{
+    line-height: 1;
+    background: #ccc;
+    
+}
