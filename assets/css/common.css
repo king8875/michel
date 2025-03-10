@@ -1,0 +1,8 @@
+h2 span {
+    display: inline !important;
+
+}
+
+h2 em {
+    font-weight: 300;
+}
