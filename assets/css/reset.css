@@ -3,6 +3,7 @@
     --main-bg : #fcfcf4;
     --menu-bg : #e2e2d4;
     --black-color : #000;
+    --accent-color : #dcf263;
 }
 
 
@@ -35,6 +36,5 @@ body, html{
 }
 body{
     line-height: 1;
-    background: #ccc;
-    
+    background: var(--main-bg);    
 }

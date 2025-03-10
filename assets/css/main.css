@@ -101,7 +101,6 @@
 }
 .side-menu.close{
     transform: translateX(110%);
-    /* width: 0; */
 }
 .side-menu .side-menu__wrapper{
     display: flex;
@@ -169,8 +168,7 @@
 }
 .intro-section .intro-wrapper{
     width: 100%;
-    height: 100vh;
-    min-height: 100vh;
+    height: 98vh;
     
 }
 .intro-section .intro-wrapper .intro__bg{
@@ -237,11 +235,12 @@
     left: 0;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     padding: 0 20px;
 }
 .subtit-description{
+    padding-bottom: 20px;
 }
 .subtit-description .subtit-description-tx{
     max-width: 400px;
@@ -258,16 +257,61 @@
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 600px;
+    width: 700px;
+    height: 28px;
     z-index: 10;
 }
 .subtit-shape .shape-wrapper{
     display: flex;
-    width: 100%;
     overflow: hidden;
-    height: 40px;
-    background: var(--menu-bg);
 }
-.subtit-shape .shape-wrapper .shape__left{}
-.subtit-shape .shape-wrapper .shape__center{}
-.subtit-shape .shape-wrapper .shape__right{}
+.subtit-shape .shape-wrapper .shape__left{
+    width: 2rem; /* 삼각형의 밑변 */
+    height: 2rem; /* 삼각형의 높이 */
+    background-color: var(--main-bg);
+    clip-path: polygon(100% 100%, 100% 0%, 0% 100%);
+    flex-shrink: 0;
+    
+}
+.subtit-shape .shape-wrapper .shape__center{
+    width: 100%;
+    background: var(--main-bg);
+}
+.subtit-shape .shape-wrapper .shape__right{
+    width: 2rem; /* 삼각형의 밑변 */
+    height: 2rem; /* 삼각형의 높이 */
+    background-color: var(--main-bg);
+    clip-path: polygon(100% 100%, 0% 100%, 0% 0%);
+    flex-shrink: 0;
+    
+}
+
+.subtit-actions{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: .4em;
+    gap: 20px;
+    padding-bottom: 20px;
+    color: var(--main-bg);
+}
+.subtit-actions p{}
+.subtit-actions a{
+    padding: 10px 30px;
+    
+    color: var(--black-color);
+}
+.subtit-actions .buy__link{
+    background: var(--accent-color);
+}
+.subtit-actions .sell__link{
+    background: var(--main-bg);
+}
+
+
+@media (max-width:1320px) {
+    .subtit-shape{
+        width: 500px;
+    }
+    
+}
