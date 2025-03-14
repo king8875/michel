@@ -6,3 +6,7 @@ h2 span {
 h2 em {
     font-weight: 300;
 }
+
+.accent01-color{
+    color: var(--accent01-color);
+}
