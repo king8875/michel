@@ -286,7 +286,9 @@
 
 /* featuers */
 
-.features-section{}
+.features-section{
+    position: relative;
+}
 .features-section .features-wrapper{}
 .features-section .features-wrapper .features-tit__block{
     display: flex;
@@ -299,22 +301,29 @@
     display: inline;
     max-width: 1000px;
     font-size: 3em;
+    margin-bottom: 100px;
 }
 .features__img-wrapper{
     position: relative;
-    width: 100%;
-    height: 400px;
 }
 .features__img-block{
+    position: relative;
     width: 400px;
-    height: 100%;
+    aspect-ratio: 1 / 1.3;
+    padding: 10px;
+    background: #ccc;
 }
 .features__img-block img{   
+    position: absolute;
+    top: 0;left: 0;right: 0;bottom: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
+.features__img-tx{
+    color: #111;
+    margin-left: 20px;
+}
 
 
 

@@ -21,5 +21,22 @@ function closeAni(){
 function openAni(){
     sideMenu.classList.remove('close');
     closeBtn.classList.remove('hidden');
-
 }
+
+
+
+
+const images = document.querySelectorAll(".features__img-block img");
+
+gsap.set(images, { opacity: 0 }); 
+gsap.set(images[0], { opacity: 1 }); 
+
+let tl = gsap.timeline({ repeat: -1 });
+
+
+images.forEach((img, i) => {
+    tl.to(images, { opacity: 0, duration: 0, immediateRender: false }) 
+      .to(img, { opacity: 1, duration: 0 }) 
+      .to({}, { duration: 1.5 });
+  });
+
